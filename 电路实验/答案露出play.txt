@@ -1,0 +1,29 @@
+打开预考核答题页面，摁下F12（或fn+F12),在Console里面粘贴下面代码并回车执行,正确答案会直接被选中，此时直接提交就好:
+
+s=document.getElementsByTagName("iframe")[0].contentWindow.document
+inputs=s.getElementsByTagName("input")
+answer=[]
+for(i=0;i<inputs.length;i++){
+    if(inputs[i].name.indexOf("kg_answer")>=0){
+        answer.push(inputs[i]);
+    }
+}
+answeri=[]
+for(i=0;i<answer.length;i++){
+    if(answer[i].value.indexOf("e7a70fa81a5935b7")>=0){
+        answeri.push("A")
+    }    if(answer[i].value.indexOf("fe57bcca61014095")>=0){
+        answeri.push("B")
+    }    if(answer[i].value.indexOf("0cad1d412f80b84d")>=0){
+        answeri.push("C")
+    }    if(answer[i].value.indexOf("f30e62bbd73d6df5")>=0){
+        answeri.push("D")
+    }    if(answer[i].value.indexOf("fc35332cedf6e5e9")>=0){
+        answeri.push("E")
+    }}
+for(i=0;i<answeri.length;i++){var strs="kg"+(i+1).toString();
+    for(u=0;u<inputs.length;u++){
+        if(inputs[u].value==answeri[i]&&inputs[u].name==strs){
+            inputs[u].click();
+        }
+    }}
