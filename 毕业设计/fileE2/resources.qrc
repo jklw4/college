@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/style">
+        <file>Gravira/Gravira.qss</file>
+        <file>Gravira/Gravira.png</file>
+        <file>Integrid/Integrid.qss</file>
+        <file>Obit/Obit.qss</file>
+        <file>Integrid/Integrid.png</file>
+        <file>Obit/Obit.png</file>
+        <file>SpyBot/SpyBot.qss</file>
+        <file>SpyBot/SpyBot.png</file>
+        <file>WordOffice/WordOffice.png</file>
+        <file>WordOffice/WordOffice.qss</file>
+        <file>Wstartpage/Wstartpage.png</file>
+        <file>Wstartpage/Wstartpage.qss</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/-_打开项目.png</file>
+        <file>icons/-_另存为.png</file>
+        <file>icons/-_退出-11.png</file>
+        <file>icons/-_线性.png</file>
+    </qresource>
+</RCC>

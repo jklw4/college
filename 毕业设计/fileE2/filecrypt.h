@@ -1,0 +1,38 @@
+#ifndef FILECRYPT_H
+#define FILECRYPT_H
+
+#include <QApplication>
+#include <QFileDialog>
+#include <QTextEdit>
+#include <QPushButton>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QMessageBox>
+#include <openssl/bio.h>
+#include <openssl/evp.h>
+#include <openssl/pem.h>
+#include <openssl/ec.h>
+
+// 定义一个类，用来封装文件加密和解密的功能
+class FileCrypt : public QObject{
+    Q_OBJECT
+public:
+    FileCrypt();
+    ~FileCrypt();
+
+    // 从一个文件中读取共享密钥
+    bool load_shared_secret(const QString &file_name);
+
+    // 对一个文件进行SM4加密或解密，并输出到另一个文件中
+    bool sm4_crypt_file(const QString &in_file_name, const QString &out_file_name, bool encrypt);
+
+    // 对一个文件夹中的所有文件进行SM4加密或解密，并输出到另一个文件夹中,true表示加密，false表示解密
+    bool sm4_crypt_folder(const QString &in_folder_name, const QString &out_folder_name, bool encrypt);
+
+private:
+    unsigned char *shared_secret; // 共享密钥
+
+    unsigned char iv[16];// 定义一个初始向量，使用共享密钥的前16字节作为初始向量
+};
+
+#endif // FILECRYPT_H

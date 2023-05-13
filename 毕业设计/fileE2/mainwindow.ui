@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1014</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>文件加密认证系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/icons/-_打开项目.png</normaloff>:/icons/icons/-_打开项目.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>100</y>
+      <width>501</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>文件加密认证系统</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_to_SM2_get">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>280</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sm2密钥生成</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_to_key_change">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>380</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>密钥交换</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_to_sm3_sign">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>280</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>文件签名</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_to_sm4_crypto">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>480</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>sm4加解密</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_to_sm3_veri">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>380</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>文件验签</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1014</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>主题</string>
+    </property>
+    <addaction name="actionintegrid"/>
+    <addaction name="actionobit"/>
+    <addaction name="actionspybot"/>
+    <addaction name="actionwordoffice"/>
+    <addaction name="actionwstarpage"/>
+    <addaction name="actiongravira"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionintegrid">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+   </property>
+   <property name="text">
+    <string>integrid</string>
+   </property>
+  </action>
+  <action name="actionobit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+   </property>
+   <property name="text">
+    <string>obit</string>
+   </property>
+  </action>
+  <action name="actionspybot">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+   </property>
+   <property name="text">
+    <string>spybot</string>
+   </property>
+  </action>
+  <action name="actionwordoffice">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+   </property>
+   <property name="text">
+    <string>wordoffice</string>
+   </property>
+  </action>
+  <action name="actionwstarpage">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+   </property>
+   <property name="text">
+    <string>wstarpage</string>
+   </property>
+  </action>
+  <action name="actiongravira">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/icons/-_线性.png</normaloff>:/icons/icons/-_线性.png</iconset>
+   </property>
+   <property name="text">
+    <string>gravira</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
